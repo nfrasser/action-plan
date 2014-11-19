@@ -1,8 +1,6 @@
-# Action-plan
+# Nick's Problem-Solving Action plan
 
-This README outlines the details of collaborating on this Ember application.
-
-A short introduction of this app could easily go here.
+Made by Nikolai Frasser (UWaterloo ID `nfrasser`) for PD6 Problem Solving.
 
 ## Prerequisites
 
