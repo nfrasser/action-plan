@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
     modelDidLoad: function () {
         var model = this.get('model');
         if (model) {
-            model.set('implement', 'Weighed Matrix Comparison Tool')
+            model.set('implement', 'Weighed Matrix Comparison Tool');
         }
     }.observes('model')
 });
