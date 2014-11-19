@@ -1,0 +1,36 @@
+<div class="col-md-8 col-md-offset-2">
+
+    <h2>
+        You did it!
+    </h2>
+
+    <p class="lead">
+        You now have all the tools you need get started. It won't be long before
+        {{#if model.description}}
+            <em>"{{model.description}}"</em>
+        {{else}}
+            your problem
+        {{/if}}
+         will no longer be a problem you have to worry about!
+
+    </p>
+    <p>
+        <button class="btn btn-lg btn-success" {{action "yay"}}>Yay!</button>
+    </p>
+
+    <h3>But you're not done yet...</h3>
+
+    <p>
+        Make sure that as you're implementing your solution, monitor and track progress. Are there any new insights or circumstances? Is a different solution better for the problem given this new information? If yes, it might be time to select an alternate in the {{link-to "previous step" "problem.implement"}}.
+    </p>
+
+</div>
+{{#control-bar class="text-right"}}
+    {{#link-to "problem.index" class="btn btn-lg btn-warning pull-left"}}
+        <i class="glyphicon glyphicon-chevron-left"></i> Start Over
+    {{/link-to}}
+    {{#link-to "resources" class="btn btn-lg btn-primary"}}
+        Additional Resources <i class="glyphicon glyphicon-chevron-right"></i>
+    {{/link-to}}
+{{/control-bar}}
+

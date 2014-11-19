@@ -1,0 +1,82 @@
+<div class="col-md-8 col-md-offset-2">
+
+    <h2>
+        2. Analyze it!
+    </h2>
+
+
+    <h3>Select an analysis tool</h3>
+    <p class="lead">
+        Different problems will require different approaches. Select a tool to learn more about it
+    </p>
+
+    <p>
+        {{view "Ember.Select" content=tools value=model.analyze class="form-control"}}
+    </p>
+
+    {{#if toolIsCauseEffect}}
+        <p>AKA the fishbone diagram. Checkout <a href="http://www.mindtools.com/pages/article/newTMC_03.htm" target="_blank">this website</a> to learn more about it
+            <br>
+            <img src="http://i.imgur.com/sTsEk9T.png" class="img-responsive">
+        </p>
+    {{/if}}
+
+    {{#if toolIsFiveWhys}}
+        <p>
+            A simple root-cause analysis tool for solving <strong>simple</strong> problems
+            <br>
+            <img src="http://i.imgur.com/RSNpbU3.png" class="img-responsive">
+        </p>
+    {{/if}}
+
+    <hr>
+
+    <p class="lead">
+        A structured analysis is the best way to identify a solution that not only works, but is low-risk and keeps everybody happy.
+    </p>
+
+    <ol>
+      <li>
+        Gather Data
+        <ul>
+          <li>How do we know there's a problem</li>
+          <li>What have you seen /heard/experienced</li>
+          <li>Determine what other info you need</li>
+        </ul>
+      </li>
+      <li>Determine Causes</li>
+      <li>What causes the problem?</li>
+      <li>What's gone wrong?</li>
+      <li>Identify the causes?</li>
+      <li>
+        Identify/Work with Stakeholders
+        <ul>
+          <li>Determine who else is impacted</li>
+          <li>People who have an interest in seeing problem solved/may see it from a different perspective</li>
+          <li>May provide problem-solving solutions</li>
+        </ul>
+      </li>
+      <li>
+        Identify/Manage Risks
+        <ul>
+          <li>Involved with delays for finding solution</li>
+          <li>Risks with moving ahead with incorrect solution?</li>
+          <li>How else can risk be minimized?</li>
+        </ul>
+      </li>
+    </ol>
+
+    <p class="lead">
+        Once you have analyzed your problem, hit the button to go to the next step
+    </p>
+
+</div>
+
+{{#control-bar class="text-right"}}
+    {{#link-to "problem.index" class="btn btn-lg btn-default pull-left"}}
+        <i class="glyphicon glyphicon-chevron-left"></i> Back
+    {{/link-to}}
+    {{#link-to "problem.generate" class="btn btn-lg btn-success"}}
+        Next <i class="glyphicon glyphicon-chevron-right"></i>
+    {{/link-to}}
+{{/control-bar}}

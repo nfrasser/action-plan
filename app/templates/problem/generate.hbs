@@ -1,0 +1,76 @@
+<div class="col-md-8 col-md-offset-2">
+    <h2>
+        3. Generate potential solutions
+    </h2>
+
+    <p class="lead">
+        Select an idea generation tool to learn more about it. Again, different problems will require a different approach.
+    </p>
+
+    <p>
+        {{view "Ember.Select" content=tools value=model.generate class="form-control"}}
+    </p>
+
+    {{#if toolIsGroupBrainstorming}}
+        <p>Setting aside time with the stakeholders to formulate ideas</p>
+        <ol>
+            <li>Define problem clearly</li>
+            <li>Document</li>
+            <li>Select ideas and explore further</li>
+        </ol>
+    {{/if}}
+
+    {{#if toolIsIndividualBrainstorming}}
+        <p>You have to be able to consider <em>any</em> ideas that come to mind (free yourself!)</p>
+        <p>Process is very similar to group brainstorming</p>
+    {{/if}}
+
+    {{#if toolIsMindMaps}}
+        <p>
+            Show relationships that exists between ideas - How problems and solutions are connected to each other
+        </p>
+    {{/if}}
+
+    {{#if toolIsTheDisneyCreativeStrategy}}
+        <p>Applied a 3 step process to turn work into reality</p>
+        <ol>
+            <li><strong>Create:</strong> Generate limitless idea</li>
+            <li><strong>Apply:</strong> Decide which of your ideas can be implemented now  or later</li>
+            <li><strong>Evaluate:</strong> Consider whether it's possible to do the solution, evaluate weaknesses, etc.</li>
+        </ol>
+    {{/if}}
+
+    {{#if toolIsVisualThinking}}
+        <p>"The Back of the Napkin" approach - Selling ideas with pictures</p>
+    {{/if}}
+
+    {{#if toolIsCreativeThinkingThroughPlay}}
+        <p>A powerful creative problem-solving tool - solve problems by playing with toys and bricks!</p>
+    {{/if}}
+
+    {{#if toolIsTRIZ}}
+        <ul>
+            <li>Relies on patterns of problems and past solutions</li>
+            <li>More to it that data/analytics</li>
+            <li>Identifies how creative problem solving was applied in the past</li>
+        </ul>
+    {{/if}}
+
+    <hr>
+
+    <h3>Remember: Think outside the box</h3>
+    <ul>
+        <li>Think beyond the obvious when solving problems</li>
+        <li>Approach a problem with reason and imagination</li>
+        <li>Consider all options as probable solutions</li>
+    </ul>
+
+</div>
+{{#control-bar class="text-right"}}
+    {{#link-to "problem.analyze" class="btn btn-lg btn-default pull-left"}}
+        <i class="glyphicon glyphicon-chevron-left"></i> Back
+    {{/link-to}}
+    {{#link-to "problem.implement" class="btn btn-lg btn-success"}}
+        Next <i class="glyphicon glyphicon-chevron-right"></i>
+    {{/link-to}}
+{{/control-bar}}

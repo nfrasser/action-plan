@@ -1,0 +1,20 @@
+<div class="col-xs-12">
+    <h1>
+        The problem{{#if model.description}}:<br>
+            <small>{{link-to model.description "problem.index"}}</small>
+        {{/if}}
+    </h1>
+    {{#if model.analyze}}
+        <p>Analysis tool: {{link-to model.analyze "problem.analyze"}}</p>
+    {{/if}}
+    {{#if model.generate}}
+        <p>Solution-generation tool: {{link-to model.generate "problem.generate"}}</p>
+    {{/if}}
+    {{#if model.implement}}
+        <p>Implementation selection tool: {{link-to model.implement "problem.implement"}}</p>
+    {{/if}}
+</div>
+<div class="clearfix"></div>
+<hr>
+{{outlet}}
+

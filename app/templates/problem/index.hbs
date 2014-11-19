@@ -1,0 +1,36 @@
+<div class="col-md-8 col-md-offset-2">
+    <h2>
+        1. Identify your problem here:
+    </h2>
+    <br>
+    {{textarea class="form-control" value=model.description placeholder="e.g., I am not productive after eating a big lunch."}}
+
+    <h3>Having a hard time?</h3>
+    <p>
+        Determining a meaningul, exceptional problem is one of the hardest parts of the problem-solving process. Try to keep these points in mind
+    </p>
+
+    <ol style="max-width: 570px; margin: auto;">
+        <li>Discuss and Share</li>
+        <li>Use business media (e.g., UWaterloo website resources)</li>
+        <li>Compare results of steps 1 and 2</li>
+        <li>Look for high cost</li>
+        <li>Look for repeated failures</li>
+        <li>Look for customer problems</li>
+        <li>Look of inefficiencies </li>
+    </ol>
+
+    <br>
+    <p class="lead">
+        Once you have identified your problem, hit the button to go to the next step
+    </p>
+
+</div>
+{{#control-bar class="text-right"}}
+    {{#link-to "prelude" class="btn btn-lg btn-default pull-left"}}
+        <i class="glyphicon glyphicon-chevron-left"></i> Back
+    {{/link-to}}
+    {{#link-to "problem.analyze" class="btn btn-lg btn-success"}}
+        Next <i class="glyphicon glyphicon-chevron-right"></i>
+    {{/link-to}}
+{{/control-bar}}
